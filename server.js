@@ -163,6 +163,6 @@ app.put('/emails/:id', async (req, res) => {
     }
   });
   
-app.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}`);
+app.listen(PORT || process.env.PORT, () => {
+    console.log(`Server is running`);
 });
